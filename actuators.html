@@ -1,0 +1,24 @@
+<html>
+    <head>
+    <title>Minha Casa</title>
+    </head>
+    <body>
+    <h1>Atuadores</h1>
+    <ul>{% for key, value in atuadores.items() %}
+        {% if(value == 0) %}
+        <li>{{key}}: Desligado</li>
+        {% elif(value == 1) %}
+        <li>{{key}}: Ligado</li>
+        {% else %}
+        <li>Valor Invalido</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+
+    <li> Entrar para <a href="/sensors">sensores </a>!
+    <li> Voltar para <a href="/">pagina inicial </a>!
+    
+    </p>
+    </body>
+    </html>
+
